@@ -29,7 +29,6 @@ body {
 }
 
 .SPLine {
-    /*background: linear-gradient(to right, #B7DC78 18.20%,#63D0DF 62.07%, #00A1DF 100%);*/
     height: 15px;
     border-radius: 10px 60px;
     width: 100%;
