@@ -1,0 +1,131 @@
+﻿@import url('https://fonts.googleapis.com/css?family=B612');
+
+body {
+    font-family: 'B612';
+    /*background-image: url()*/
+}
+
+.Header {
+    overflow: hidden;
+    height: 110px;
+}
+
+.TextHeader {
+    font-weight: bold; 
+    font-size: 40px; 
+    text-align: right; 
+    color: #7D868C;
+}
+
+.divTitle {
+    height: 35px;
+    overflow: hidden;
+}
+.Round {
+    border: 1px solid black;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.SPLine {
+    /*background: linear-gradient(to right, #B7DC78 18.20%,#63D0DF 62.07%, #00A1DF 100%);*/
+    height: 15px;
+    border-radius: 10px 60px;
+    width: 100%;
+}
+
+.SPLine::after {
+        content: '.';
+        visibility: hidden;
+}
+
+.cellOneCellPadding {
+    padding-left: 25pt !important;
+}
+
+.gvHeader {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    color: #7D868C;
+}
+
+.gvFirstRowItem {
+    text-align: center;
+    font-size: x-large;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.gvMiddleRowItem {
+    text-align: left;
+    font-size: x-large;
+    padding-left: 25pt !important;
+}
+.gvLastRowItem {
+    text-align: left;
+    font-size: x-large;
+    padding-left: 25pt !important;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.gvDiv {
+    height: calc(100vh - 196px); /* Calc remaing page height*/
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+}
+
+.gvDiv::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+@-webkit-keyframes invalid {
+    from {
+        background-color: lightgrey;
+    }
+
+    to {
+        background-color: inherit;
+    }
+}
+
+@-moz-keyframes invalid {
+    from {
+        background-color: lightgrey;
+    }
+
+    to {
+        background-color: inherit;
+    }
+}
+
+@-o-keyframes invalid {
+    from {
+        background-color: lightgrey;
+    }
+
+    to {
+        background-color: inherit;
+    }
+}
+
+@keyframes invalid {
+    from {
+        background-color: lightgrey;
+    }
+
+    to {
+        background-color: inherit;
+    }
+}
+
+.invalid {
+    -webkit-animation: invalid 4s infinite; /* Safari 4+ */
+    -moz-animation: invalid 4s infinite; /* Fx 5+ */
+    -o-animation: invalid 4s infinite; /* Opera 12+ */
+    animation: invalid 4s infinite; /* IE 10+ */
+}
+
